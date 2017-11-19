@@ -1,22 +1,24 @@
+@import "../variables.scss";
+
 .counter {
   margin-right: 25px;
   ul {
     width: 230px;
-    border: 1px dotted #fff;
+    border: 1px dotted $white;
     letter-spacing: -1em;
     li {
       position: relative;
       display: inline-block;
       width: 7%;
-      border-left: 1px dotted #fff;
-      color: #fff;
+      border-left: 1px dotted $white;
+      color: $white;
       text-align: center;
       padding: 3px;
       font-family: $klavika-light;
       letter-spacing: normal;
       cursor: pointer;
       .highlighted {
-        background-color: #fff;
+        background-color: $white;
       }
     }
     li:first-of-type {

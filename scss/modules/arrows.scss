@@ -1,9 +1,11 @@
+@import "../variables.scss";
+
 %arrow {
   position: absolute;
   top: 47%;
   height: 46px;
   width: 46px;
-  border: solid #ebede2;
+  border: solid $white;
   border-width: 3px 3px 0 0;
   cursor: pointer;
   transition: opacity 0.5s;

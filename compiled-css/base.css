@@ -55,7 +55,7 @@ a {
   .logo svg {
     width: 222px;
     height: 110px;
-    fill: #fff; }
+    fill: #ebede2; }
 
 @media all and (max-width: 600px) {
   h2 {

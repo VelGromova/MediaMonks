@@ -67,7 +67,7 @@ a {
   .logo svg {
     width: 222px;
     height: 110px;
-    fill: #fff; }
+    fill: #ebede2; }
 
 @media all and (max-width: 600px) {
   h2 {
@@ -125,21 +125,21 @@ a {
   margin-right: 25px; }
   .counter ul {
     width: 230px;
-    border: 1px dotted #fff;
+    border: 1px dotted #ebede2;
     letter-spacing: -1em; }
     .counter ul li {
       position: relative;
       display: inline-block;
       width: 7%;
-      border-left: 1px dotted #fff;
-      color: #fff;
+      border-left: 1px dotted #ebede2;
+      color: #ebede2;
       text-align: center;
       padding: 3px;
       font-family: "Klavika Light", sans-serif;
       letter-spacing: normal;
       cursor: pointer; }
       .counter ul li .highlighted {
-        background-color: #fff; }
+        background-color: #ebede2; }
     .counter ul li:first-of-type {
       border-left: 0; }
 
@@ -170,7 +170,7 @@ a {
   opacity: 1;
   transition: opacity 0.3s; }
   .loading-content span {
-    color: #fff;
+    color: #ebede2;
     font-family: "Klavika Light", sans-serif;
     font-size: 16px;
     font-weight: 300;
