@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Klavika Bold';
+  src: url("../assets/font/klavika-bold-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'Klavika Light';
+  src: url("../assets/font/klavika-light-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'Klavika Medium';
+  src: url("../assets/font/klavika-medium-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'Klavika Regular';
+  src: url("../assets/font/klavika-regular-webfont.woff") format("woff"); }
+body, ul, li, h2, p {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #101010; }
+
+h2 {
+  font-size: 64px; }
+
+p {
+  font-size: 16px;
+  font-family: "Klavika Light", sans-serif;
+  color: #ebede2; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.slider-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2;
+  transition: opacity 3s; }
+  .slider-nav .wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    height: 100%; }
+    .slider-nav .wrapper .slider-img {
+      display: block;
+      position: absolute;
+      width: 1000%;
+      height: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      box-sizing: border-box;
+      transition: left 0.5s, opacity 3s; }
+    .slider-nav .wrapper .show {
+      opacity: 1;
+      transition: opacity 0.5s linear 0.5s; }
+
+.logo {
+  position: absolute;
+  right: 0;
+  bottom: 20px; }
+  .logo svg {
+    width: 222px;
+    height: 110px;
+    fill: #fff; }
+
+@media all and (max-width: 600px) {
+  h2 {
+    font-size: 48px; } }
+.container {
+  position: relative;
+  height: 100%;
+  margin-left: 32px;
+  margin-right: 32px;
+  box-sizing: border-box; }
+
+.title-intro, .title-left, .title-right, .title-ending {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 522px;
+  color: #ebede2;
+  font-family: "Klavika Regular", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: opacity 0.5s; }
+  .title-intro span, .title-left span, .title-right span, .title-ending span {
+    border-bottom: 1px solid #ebede2; }
+
+.title-intro {
+  padding-top: 45px; }
+
+.title-left {
+  top: 45%;
+  left: 50px; }
+
+.title-right {
+  text-align: right;
+  top: 45%;
+  right: 50px; }
+
+.title-ending {
+  padding-top: 45px;
+  right: 0; }
+
+.intro-text, .conclusive-text {
+  position: absolute; }
+  .intro-text span, .conclusive-text span {
+    display: block; }
+
+.intro-text {
+  bottom: 128px; }
+
+.conclusive-text {
+  right: 0;
+  top: 45%;
+  text-align: right; }
+
+.counter {
+  margin-right: 25px; }
+  .counter ul {
+    width: 230px;
+    border: 1px dotted #fff;
+    letter-spacing: -1em; }
+    .counter ul li {
+      position: relative;
+      display: inline-block;
+      width: 7%;
+      border-left: 1px dotted #fff;
+      color: #fff;
+      text-align: center;
+      padding: 3px;
+      font-family: "Klavika Light", sans-serif;
+      letter-spacing: normal;
+      cursor: pointer; }
+      .counter ul li .highlighted {
+        background-color: #fff; }
+    .counter ul li:first-of-type {
+      border-left: 0; }
+
+.arrow-right, .arrow-left {
+  position: absolute;
+  top: 47%;
+  height: 46px;
+  width: 46px;
+  border: solid #ebede2;
+  border-width: 3px 3px 0 0;
+  cursor: pointer;
+  transition: opacity 0.5s; }
+
+.arrow-right {
+  right: 10px;
+  transform: rotate(45deg); }
+
+.arrow-left {
+  left: 10px;
+  transform: rotate(225deg); }
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s; }
+  .loading-content span {
+    color: #fff;
+    font-family: "Klavika Light", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 58px; }
+  .loading-content .monk {
+    animation: MoveUpDown 1s linear infinite; }
+  .loading-content .blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    filter: blur(100px) brightness(110%); }
+
+@keyframes MoveUpDown {
+  0% {
+    margin-top: 0; }
+  50% {
+    margin-top: 20px; }
+  100% {
+    margin-top: 0; } }
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: flex-end;
+  padding-bottom: 40px; }
+  .footer .step-text {
+    opacity: 0;
+    padding-bottom: 5px;
+    transition: opacity 0.5s linear 0.5s; }
+
+/*# sourceMappingURL=main.css.map */

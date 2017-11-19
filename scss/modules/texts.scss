@@ -1,0 +1,18 @@
+%text {
+  position: absolute;
+  span {
+    display: block;
+  }
+}
+
+.intro-text {
+  @extend %text;
+  bottom: 128px;
+}
+
+.conclusive-text {
+  @extend %text;
+  right: 0;
+  top: 45%;
+  text-align: right;
+}

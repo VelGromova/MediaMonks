@@ -1,0 +1,26 @@
+.counter {
+  margin-right: 25px;
+  ul {
+    width: 230px;
+    border: 1px dotted #fff;
+    letter-spacing: -1em;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 7%;
+      border-left: 1px dotted #fff;
+      color: #fff;
+      text-align: center;
+      padding: 3px;
+      font-family: $klavika-light;
+      letter-spacing: normal;
+      cursor: pointer;
+      .highlighted {
+        background-color: #fff;
+      }
+    }
+    li:first-of-type {
+      border-left: 0;
+    }
+  }
+}

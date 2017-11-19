@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Klavika Bold';
+  src: url('../assets/font/klavika-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Klavika Light';
+  src: url('../assets/font/klavika-light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Klavika Medium';
+  src: url('../assets/font/klavika-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Klavika Regular';
+  src: url('../assets/font/klavika-regular-webfont.woff') format('woff');
+}
+
+// general
+@import 'variables';
+@import 'base';
+@import 'layout';
+//
+// modules
+@import 'modules/titles';
+@import 'modules/texts';
+@import 'modules/stepper';
+@import 'modules/arrows';
+//
+//// sections
+//@import 'sections/slider';
+//@import 'sections/instructions';
+//@import 'sections/partners';
+//@import 'sections/holidays';
+@import 'sections/loading';
+@import 'sections/footer';

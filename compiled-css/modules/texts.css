@@ -1,0 +1,14 @@
+.intro-text, .conclusive-text {
+  position: absolute; }
+  .intro-text span, .conclusive-text span {
+    display: block; }
+
+.intro-text {
+  bottom: 128px; }
+
+.conclusive-text {
+  right: 0;
+  top: 45%;
+  text-align: right; }
+
+/*# sourceMappingURL=texts.css.map */

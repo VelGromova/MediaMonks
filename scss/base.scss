@@ -1,0 +1,65 @@
+@import "variables.scss";
+
+body, ul, li, h2, p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #101010;
+}
+
+h2 { font-size: 64px; }
+p { font-size: 16px; font-family: $klavika-light; color: #ebede2; }
+li { list-style-type: none; }
+a { text-decoration: none; }
+
+.slider-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2;
+  transition: opacity 3s;
+  .wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    height: 100%;
+    .slider-img {
+      display: block;
+      position: absolute;
+      width: 1000%;
+      height: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      box-sizing: border-box;
+      transition: left 0.5s, opacity 3s;
+    }
+    .show {
+      opacity: 1;
+      transition: opacity 0.5s linear 0.5s;
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  svg {
+    width: 222px;
+    height: 110px;
+    fill: #fff;
+  }
+}
+
+@media all and (max-width: 600px) {
+  h2 { font-size: 48px; }
+}
+
+

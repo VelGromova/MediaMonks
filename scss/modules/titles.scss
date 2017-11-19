@@ -1,0 +1,44 @@
+@import '../variables.scss';
+
+%title {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 522px;
+  color: $white;
+  font-family: $klavika-regular;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: opacity 0.5s;
+  span {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.title-intro {
+  @extend %title;
+  padding-top: 45px;
+}
+
+.title-left {
+  @extend %title;
+  top: 45%;
+  left: 50px;
+}
+
+.title-right {
+  @extend %title;
+  text-align: right;
+  top: 45%;
+  right: 50px;
+}
+
+.title-ending {
+  @extend %title;
+  padding-top: 45px;
+  right: 0;
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+
+}
