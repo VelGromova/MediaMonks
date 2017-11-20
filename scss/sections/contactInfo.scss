@@ -1,0 +1,31 @@
+@import '../variables.scss';
+
+.social-info {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 53%;
+  &__block {
+    margin-left: 12px;
+    img {
+      width: 15px;
+    }
+    span {
+      color: $white;
+      font: {
+        size: 16px;
+        family: $klavika-light;
+        weight: 100;
+      }
+    }
+  }
+}
+
+@media (max-width: 599px){
+  .social-info {
+    top: 55%;
+    span {
+      font-size: 14px;
+    }
+  }
+}

@@ -22,3 +22,32 @@
   left: 10px;
   transform: rotate(225deg);
 }
+
+@media (max-width: 767px) {
+  %arrow {
+    height: 23px;
+    width: 23px;
+    top: 42%;
+  }
+  .arrow-right {
+    right: 5px;
+  }
+  .arrow-left {
+    left: 5px;
+  }
+}
+
+
+@media (max-height: 767px) {
+  %arrow {
+    height: 36px;
+    width: 36px;
+  }
+}
+
+@media (max-height: 350px) {
+  %arrow {
+    height: 23px;
+    width: 23px;
+  }
+}

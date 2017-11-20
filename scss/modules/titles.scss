@@ -22,23 +22,38 @@
 
 .title-left {
   @extend %title;
-  top: 45%;
+  top: 44%;
   left: 50px;
 }
 
 .title-right {
   @extend %title;
-  text-align: right;
-  top: 45%;
+  top: 44%;
   right: 50px;
+  text-align: right;
 }
 
 .title-ending {
   @extend %title;
   padding-top: 45px;
   right: 0;
+  text-align: right;
 }
 
-@media all and (min-width: 320px) and (max-width: 600px) {
-
+@media (min-width: 320px) and (max-width: 599px) {
+  %title {
+    font-size: 32px;
+    left: 0;
+    right: 0;
+  }
+  .title-left, .title-right {
+    width: 88%;
+    top: 40%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .title-intro, .title-ending {
+    width: 100%;
+  }
 }
+

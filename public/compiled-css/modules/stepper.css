@@ -20,4 +20,8 @@
     .counter ul li:first-of-type {
       border-left: 0; }
 
+@media (max-width: 599px) {
+  .counter ul {
+    width: 215px; } }
+
 /*# sourceMappingURL=stepper.css.map */

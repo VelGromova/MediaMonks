@@ -11,6 +11,7 @@ h2 {
 p {
   font-size: 16px;
   font-family: "Klavika Light", sans-serif;
+  font-weight: 100;
   color: #ebede2; }
 
 li {
@@ -50,15 +51,28 @@ a {
 
 .logo {
   position: absolute;
-  right: 0;
+  right: -50px;
   bottom: 20px; }
   .logo svg {
     width: 222px;
     height: 110px;
     fill: #ebede2; }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1440px) {
+  h2 {
+    font-size: 57px; } }
+@media all and (max-width: 1200px) {
   h2 {
     font-size: 48px; } }
+@media all and (max-width: 599px) {
+  p {
+    font-size: 14px; }
+
+  .logo {
+    top: 18px;
+    right: -30px; }
+    .logo svg {
+      width: 111px;
+      height: 55px; } }
 
 /*# sourceMappingURL=base.css.map */

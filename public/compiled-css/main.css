@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Klavika Bold';
-  src: url("../assets/font/klavika-bold-webfont.woff") format("woff"); }
+  src: url("../public/font/klavika-bold-webfont.woff") format("woff"); }
 @font-face {
   font-family: 'Klavika Light';
-  src: url("../assets/font/klavika-light-webfont.woff") format("woff"); }
+  src: url("../public/font/klavika-light-webfont.woff") format("woff"); }
 @font-face {
   font-family: 'Klavika Medium';
-  src: url("../assets/font/klavika-medium-webfont.woff") format("woff"); }
+  src: url("../public/font/klavika-medium-webfont.woff") format("woff"); }
 @font-face {
   font-family: 'Klavika Regular';
-  src: url("../assets/font/klavika-regular-webfont.woff") format("woff"); }
+  src: url("../public/font/klavika-regular-webfont.woff") format("woff"); }
 body, ul, li, h2, p {
   padding: 0;
   margin: 0; }
@@ -23,6 +23,7 @@ h2 {
 p {
   font-size: 16px;
   font-family: "Klavika Light", sans-serif;
+  font-weight: 100;
   color: #ebede2; }
 
 li {
@@ -62,16 +63,29 @@ a {
 
 .logo {
   position: absolute;
-  right: 0;
+  right: -50px;
   bottom: 20px; }
   .logo svg {
     width: 222px;
     height: 110px;
     fill: #ebede2; }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1440px) {
+  h2 {
+    font-size: 57px; } }
+@media all and (max-width: 1200px) {
   h2 {
     font-size: 48px; } }
+@media all and (max-width: 599px) {
+  p {
+    font-size: 14px; }
+
+  .logo {
+    top: 18px;
+    right: -30px; }
+    .logo svg {
+      width: 111px;
+      height: 55px; } }
 .container {
   position: relative;
   height: 100%;
@@ -79,6 +93,10 @@ a {
   margin-right: 32px;
   box-sizing: border-box; }
 
+@media (max-width: 599px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px; } }
 .title-intro, .title-left, .title-right, .title-ending {
   position: absolute;
   display: block;
@@ -96,18 +114,33 @@ a {
   padding-top: 45px; }
 
 .title-left {
-  top: 45%;
+  top: 44%;
   left: 50px; }
 
 .title-right {
-  text-align: right;
-  top: 45%;
-  right: 50px; }
+  top: 44%;
+  right: 50px;
+  text-align: right; }
 
 .title-ending {
   padding-top: 45px;
-  right: 0; }
+  right: 0;
+  text-align: right; }
 
+@media (min-width: 320px) and (max-width: 599px) {
+  .title-intro, .title-left, .title-right, .title-ending {
+    font-size: 32px;
+    left: 0;
+    right: 0; }
+
+  .title-left, .title-right {
+    width: 88%;
+    top: 40%;
+    margin: 0 auto;
+    text-align: center; }
+
+  .title-intro, .title-ending {
+    width: 100%; } }
 .intro-text, .conclusive-text {
   position: absolute; }
   .intro-text span, .conclusive-text span {
@@ -120,7 +153,16 @@ a {
   right: 0;
   top: 45%;
   text-align: right; }
+  .conclusive-text a {
+    color: #ebede2;
+    text-decoration: underline; }
 
+@media (max-width: 599px) {
+  .intro-text {
+    bottom: 85px; }
+
+  .conclusive-text {
+    width: 80%; } }
 .counter {
   margin-right: 25px; }
   .counter ul {
@@ -143,6 +185,9 @@ a {
     .counter ul li:first-of-type {
       border-left: 0; }
 
+@media (max-width: 599px) {
+  .counter ul {
+    width: 215px; } }
 .arrow-right, .arrow-left {
   position: absolute;
   top: 47%;
@@ -161,6 +206,25 @@ a {
   left: 10px;
   transform: rotate(225deg); }
 
+@media (max-width: 767px) {
+  .arrow-right, .arrow-left {
+    height: 23px;
+    width: 23px;
+    top: 42%; }
+
+  .arrow-right {
+    right: 5px; }
+
+  .arrow-left {
+    left: 5px; } }
+@media (max-height: 767px) {
+  .arrow-right, .arrow-left {
+    height: 36px;
+    width: 36px; } }
+@media (max-height: 350px) {
+  .arrow-right, .arrow-left {
+    height: 23px;
+    width: 23px; } }
 .loading-content {
   display: flex;
   flex-direction: column;
@@ -203,5 +267,32 @@ a {
     opacity: 0;
     padding-bottom: 5px;
     transition: opacity 0.5s linear 0.5s; }
+
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: flex-start; }
+    .footer .step-text {
+      padding-bottom: 15px; } }
+.social-info {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 53%; }
+  .social-info__block {
+    margin-left: 12px; }
+    .social-info__block img {
+      width: 15px; }
+    .social-info__block span {
+      color: #ebede2;
+      font-size: 16px;
+      font-family: "Klavika Light", sans-serif;
+      font-weight: 100; }
+
+@media (max-width: 599px) {
+  .social-info {
+    top: 55%; }
+    .social-info span {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=main.css.map */

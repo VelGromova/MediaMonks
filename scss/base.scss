@@ -10,7 +10,7 @@ body {
 }
 
 h2 { font-size: 64px; }
-p { font-size: 16px; font-family: $klavika-light; color: $white; }
+p { font-size: 16px; font-family: $klavika-light; font-weight: 100; color: $white; }
 li { list-style-type: none; }
 a { text-decoration: none; }
 
@@ -49,7 +49,7 @@ a { text-decoration: none; }
 
 .logo {
   position: absolute;
-  right: 0;
+  right: -50px;
   bottom: 20px;
   svg {
     width: 222px;
@@ -58,8 +58,27 @@ a { text-decoration: none; }
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1440px) {
+  h2 { font-size: 57px; }
+}
+
+@media all and (max-width: 1200px) {
   h2 { font-size: 48px; }
 }
+
+@media all and (max-width: 599px) {
+  p {
+    font-size: 14px;
+  }
+  .logo {
+    top: 18px;
+    right: -30px;
+    svg {
+      width: 111px;
+      height: 55px;
+    }
+  }
+}
+
 
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>MediaMonks | The Path to Digital Enlightenment</title>
     <meta name="viewport" content="user-scalable=false, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="compiled-css/main.css" charset="utf-8">
 </head>
 <body>
@@ -26,12 +26,12 @@
 </svg>
     <div class="loading-content">
         <div class="blur"></div>
-        <img class="monk" src="assets/images/monk.png" alt="Monk">
+        <img class="monk" src="images/monk.png" alt="Monk">
         <span></span>
     </div>
 <div class="slider-nav" style="opacity: 0;">
     <div class="wrapper">
-        <img class="slider-img" src="assets/images/background.jpg" style="left: 0">
+        <img class="slider-img" src="images/background.jpg" style="left: 0">
         <div class="container">
             <h2 id="0" class="show title-intro"><span>We are breaking our vow of Silence</span></h2>
             <h2 id="1" class="title-left"><span>Talent is given true skill is earned</span></h2>
@@ -43,7 +43,31 @@
             <h2 id="7" class="title-right"><span>Take pride in your work but do not seek praise</span></h2>
             <h2 id="8" class="title-left"><span>Temporary sacrifice brings lasting results</span></h2>
             <h2 id="9" class="title-ending"><span>Become a monk</span></h2>
-            <p id="conclusiveText" class="conclusive-text" style="display: none;">Interested in joining our monastery?<span>Check out our current openings at <a href="https://mediamonks.com/career">mediamonks.com/career</a></span></p>
+            <p id="conclusiveText" class="conclusive-text" style="display: none;">Interested in joining our monastery?<span>Check out our current openings at <a href="https://mediamonks.com/career">mediamonks.com/career</a></span>
+            </p>
+            <div id="socialInfo" class="social-info" style="display: none;">
+                <div class="social-info__block">
+                    <a href="#">
+                        <img src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMS42MjYgNTExLjYyNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTExLjYyNiA1MTEuNjI2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDkuMTA2LDE3OC43MjljNi40NzIsNC41NjcsMjUuOTgxLDE4LjEzMSw1OC41MjgsNDAuNjg1YzMyLjU0OCwyMi41NTQsNTcuNDgyLDM5LjkyLDc0LjgwMyw1Mi4wOTkgICAgYzEuOTAzLDEuMzM1LDUuOTQ2LDQuMjM3LDEyLjEzMSw4LjcxYzYuMTg2LDQuNDc2LDExLjMyNiw4LjA5MywxNS40MTYsMTAuODUyYzQuMDkzLDIuNzU4LDkuMDQxLDUuODUyLDE0Ljg0OSw5LjI3NyAgICBjNS44MDYsMy40MjIsMTEuMjc5LDUuOTk2LDE2LjQxOCw3LjdjNS4xNCwxLjcxOCw5Ljg5OCwyLjU2OSwxNC4yNzUsMi41NjloMC4yODdoMC4yODhjNC4zNzcsMCw5LjEzNy0wLjg1MiwxNC4yNzctMi41NjkgICAgYzUuMTM3LTEuNzA0LDEwLjYxNS00LjI4MSwxNi40MTYtNy43YzUuODA0LTMuNDI5LDEwLjc1Mi02LjUyLDE0Ljg0NS05LjI3N2M0LjA5My0yLjc1OSw5LjIyOS02LjM3NiwxNS40MTctMTAuODUyICAgIGM2LjE4NC00LjQ3NywxMC4yMzItNy4zNzUsMTIuMTM1LTguNzFjMTcuNTA4LTEyLjE3OSw2Mi4wNTEtNDMuMTEsMTMzLjYxNS05Mi43OWMxMy44OTQtOS43MDMsMjUuNTAyLTIxLjQxMSwzNC44MjctMzUuMTE2ICAgIGM5LjMzMi0xMy42OTksMTMuOTkzLTI4LjA3LDEzLjk5My00My4xMDVjMC0xMi41NjQtNC41MjMtMjMuMzE5LTEzLjU2NS0zMi4yNjRjLTkuMDQxLTguOTQ3LTE5Ljc0OS0xMy40MTgtMzIuMTE3LTEzLjQxOEg0NS42NzkgICAgYy0xNC42NTUsMC0yNS45MzMsNC45NDgtMzMuODMyLDE0Ljg0NEMzLjk0OSw3OS41NjIsMCw5MS45MzQsMCwxMDYuNzc5YzAsMTEuOTkxLDUuMjM2LDI0Ljk4NSwxNS43MDMsMzguOTc0ICAgIEMyNi4xNjksMTU5Ljc0MywzNy4zMDcsMTcwLjczNiw0OS4xMDYsMTc4LjcyOXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiNGRmZmZmYiPjwvcGF0aD4KCQk8cGF0aCBkPSJNNDgzLjA3MiwyMDkuMjc1Yy02Mi40MjQsNDIuMjUxLTEwOS44MjQsNzUuMDg3LTE0Mi4xNzcsOTguNTAxYy0xMC44NDksNy45OTEtMTkuNjUsMTQuMjI5LTI2LjQwOSwxOC42OTkgICAgYy02Ljc1OSw0LjQ3My0xNS43NDgsOS4wNDEtMjYuOTgsMTMuNzAyYy0xMS4yMjgsNC42NjgtMjEuNjkyLDYuOTk1LTMxLjQwMSw2Ljk5NWgtMC4yOTFoLTAuMjg3ICAgIGMtOS43MDcsMC0yMC4xNzctMi4zMjctMzEuNDA1LTYuOTk1Yy0xMS4yMjgtNC42NjEtMjAuMjIzLTkuMjI5LTI2Ljk4LTEzLjcwMmMtNi43NTUtNC40Ny0xNS41NTktMTAuNzA4LTI2LjQwNy0xOC42OTkgICAgYy0yNS42OTctMTguODQyLTcyLjk5NS01MS42OC0xNDEuODk2LTk4LjUwMUMxNy45ODcsMjAyLjA0Nyw4LjM3NSwxOTMuNzYyLDAsMTg0LjQzN3YyMjYuNjg1YzAsMTIuNTcsNC40NzEsMjMuMzE5LDEzLjQxOCwzMi4yNjUgICAgYzguOTQ1LDguOTQ5LDE5LjcwMSwxMy40MjIsMzIuMjY0LDEzLjQyMmg0MjAuMjY2YzEyLjU2LDAsMjMuMzE1LTQuNDczLDMyLjI2MS0xMy40MjJjOC45NDktOC45NDksMTMuNDE4LTE5LjY5NCwxMy40MTgtMzIuMjY1ICAgIFYxODQuNDM3QzUwMy40NDEsMTkzLjU2OSw0OTMuOTI3LDIwMS44NTQsNDgzLjA3MiwyMDkuMjc1eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iI0ZGZmZmZiI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                        <span>Mail ons</span>
+                    </a>
+                </div>
+                <div class="social-info__block">
+                    <a href="#">
+                        <img src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQzMC4xMTMgNDMwLjExNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDMwLjExMyA0MzAuMTE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PGc+Cgk8cGF0aCBpZD0iRmFjZWJvb2siIGQ9Ik0xNTguMDgxLDgzLjNjMCwxMC44MzksMCw1OS4yMTgsMCw1OS4yMThoLTQzLjM4NXY3Mi40MTJoNDMuMzg1djIxNS4xODNoODkuMTIyVjIxNC45MzZoNTkuODA1ICAgYzAsMCw1LjYwMS0zNC43MjEsOC4zMTYtNzIuNjg1Yy03Ljc4NCwwLTY3Ljc4NCwwLTY3Ljc4NCwwczAtNDIuMTI3LDAtNDkuNTExYzAtNy40LDkuNzE3LTE3LjM1NCwxOS4zMjEtMTcuMzU0ICAgYzkuNTg2LDAsMjkuODE4LDAsNDguNTU3LDBjMC05Ljg1OSwwLTQzLjkyNCwwLTc1LjM4NWMtMjUuMDE2LDAtNTMuNDc2LDAtNjYuMDIxLDBDMTU1Ljg3OC0wLjAwNCwxNTguMDgxLDcyLjQ4LDE1OC4wODEsODMuM3oiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiNGRmZmZmYiPjwvcGF0aD4KPC9nPjwvZz4gPC9zdmc+" />
+                        <span>Facebook</span>
+                    </a>
+                </div>
+                <div class="social-info__block">
+                    <a href="#">
+                        <img src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDkwIDkwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5MCA5MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnPgoJPHBhdGggaWQ9IlR3aXR0ZXIiIGQ9Ik02Ny4yNjEsNjcuNDk2SDQ1LjA1NGMtMy4wODcsMC01LjcxMi0xLjA4LTcuODY5LTMuMjVjLTIuMTY3LTIuMTcyLTMuMjM4LTQuNzk3LTMuMjM4LTcuODk4di03LjkwNEg2NS41OSAgIGMyLjg1NCwwLDUuMzEyLTEuMDI1LDcuMzU0LTMuMDYyYzIuMDQxLTIuMDU0LDMuMDY2LTQuNTA5LDMuMDY2LTcuMzY2YzAtMi44NjctMS4wMjUtNS4zMTktMy4wNzItNy4zNjYgICBjLTIuMDQ5LTIuMDQyLTQuNTE1LTMuMDY2LTcuMzgxLTMuMDY2SDMzLjk0NlYxMS4yNTRjMC0zLjA5LTEuMTAyLTUuNzM1LTMuMjktNy45MzlDMjguNDc4LDEuMTA3LDI1Ljg0MiwwLDIyLjc4MiwwICAgYy0zLjE0NiwwLTUuODI1LDEuMDkxLTguMDA0LDMuMjVDMTIuNTkxLDUuNDE2LDExLjUsOC4wODQsMTEuNSwxMS4yNjR2NDUuMDg5YzAsOS4yNzQsMy4yNzgsMTcuMTk3LDkuODM3LDIzLjc3MyAgIEMyNy45MDEsODYuNzE1LDM1LjgxNCw5MCw0NS4wNjYsOTBoMjIuMjAzYzMuMDgyLDAsNS43MjktMS4xMDcsNy45My0zLjMxNGMyLjIwMy0yLjE5NywzLjMwMi00Ljg0OSwzLjMwMi03LjkzNiAgIGMwLTMuMDg4LTEuMDk5LTUuNzM0LTMuMzAyLTcuOTQxQzcyLjk5Nyw2OC42MDcsNzAuMzQ3LDY3LjQ5Niw2Ny4yNjEsNjcuNDk2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iI2ZmZmZmZiI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
             <p id="introText" class="intro-text">In January 2011, after a decade of digital, we opened the doors to our temple. <span>Follow our noble eightfold path to digital enlightenment here.</span></p>
             <span class="arrow-left" style="opacity: 0" onclick="sliderScroll('left')"></span>
             <span class="arrow-right" onclick="sliderScroll('right')"></span>

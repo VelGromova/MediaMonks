@@ -10,5 +10,15 @@
   right: 0;
   top: 45%;
   text-align: right; }
+  .conclusive-text a {
+    color: #ebede2;
+    text-decoration: underline; }
+
+@media (max-width: 599px) {
+  .intro-text {
+    bottom: 85px; }
+
+  .conclusive-text {
+    width: 80%; } }
 
 /*# sourceMappingURL=texts.css.map */

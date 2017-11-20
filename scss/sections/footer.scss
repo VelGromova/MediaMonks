@@ -11,3 +11,13 @@
     transition: opacity 0.5s linear 0.5s;
   }
 }
+
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    .step-text {
+      padding-bottom: 15px;
+    }
+  }
+}

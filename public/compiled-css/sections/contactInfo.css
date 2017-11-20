@@ -1,0 +1,22 @@
+.social-info {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 53%; }
+  .social-info__block {
+    margin-left: 12px; }
+    .social-info__block img {
+      width: 15px; }
+    .social-info__block span {
+      color: #ebede2;
+      font-size: 16px;
+      font-family: "Klavika Light", sans-serif;
+      font-weight: 100; }
+
+@media (max-width: 599px) {
+  .social-info {
+    top: 55%; }
+    .social-info span {
+      font-size: 14px; } }
+
+/*# sourceMappingURL=contactInfo.css.map */

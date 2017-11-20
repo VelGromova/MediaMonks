@@ -5,4 +5,9 @@
   margin-right: 32px;
   box-sizing: border-box; }
 
+@media (max-width: 599px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px; } }
+
 /*# sourceMappingURL=layout.css.map */

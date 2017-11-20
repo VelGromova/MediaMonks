@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Klavika Bold';
-  src: url('../assets/font/klavika-bold-webfont.woff') format('woff');
+  src: url('../public/font/klavika-bold-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Klavika Light';
-  src: url('../assets/font/klavika-light-webfont.woff') format('woff');
+  src: url('../public/font/klavika-light-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Klavika Medium';
-  src: url('../assets/font/klavika-medium-webfont.woff') format('woff');
+  src: url('../public/font/klavika-medium-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Klavika Regular';
-  src: url('../assets/font/klavika-regular-webfont.woff') format('woff');
+  src: url('../public/font/klavika-regular-webfont.woff') format('woff');
 }
 
 // general
@@ -32,3 +32,4 @@
 //// sections
 @import 'sections/loading';
 @import 'sections/footer';
+@import 'sections/contactInfo';

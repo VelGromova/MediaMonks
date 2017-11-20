@@ -1,0 +1,39 @@
+.arrow-right, .arrow-left {
+  position: absolute;
+  top: 47%;
+  height: 46px;
+  width: 46px;
+  border: solid #ebede2;
+  border-width: 3px 3px 0 0;
+  cursor: pointer;
+  transition: opacity 0.5s; }
+
+.arrow-right {
+  right: 10px;
+  transform: rotate(45deg); }
+
+.arrow-left {
+  left: 10px;
+  transform: rotate(225deg); }
+
+@media (max-width: 767px) {
+  .arrow-right, .arrow-left {
+    height: 23px;
+    width: 23px;
+    top: 42%; }
+
+  .arrow-right {
+    right: 5px; }
+
+  .arrow-left {
+    left: 5px; } }
+@media (max-height: 767px) {
+  .arrow-right, .arrow-left {
+    height: 36px;
+    width: 36px; } }
+@media (max-height: 350px) {
+  .arrow-right, .arrow-left {
+    height: 23px;
+    width: 23px; } }
+
+/*# sourceMappingURL=arrows.css.map */
